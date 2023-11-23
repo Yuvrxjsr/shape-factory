@@ -12,7 +12,8 @@ function getColorName(hexCode) {
         '#f09': 'Pink',
         '#90f': 'Purple',
     };
-    return colorMap[hexCode] || hexCode; // If the hex code is not found, return the original code
+    // If the hex code is not found, return the original code
+    return colorMap[hexCode] || hexCode; 
 }
 
 class Shape {
