@@ -33,7 +33,10 @@ body {
 }
 
 h1 {
-    color: #f0f8ff;
+    background: linear-gradient(45deg, #752be7, #8e2346);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -51,18 +54,16 @@ main {
     flex-direction: column;
 }
 
+
 #shape-container {
     background-color: #272a32;
-    color: #f0f8ff;
-    padding: 5px;
-    height: 510px;
-    width: 510px;
-    grid-gap: 5px;
-    margin-top: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap-reverse;
+    display: grid;
+    grid-template-columns: repeat(5, 90px);
+    grid-template-rows: repeat(5, 90px);
+    margin-top: 20px;
+    padding: 10px;
+    gap: 10px;
+    transform: rotateX(180deg);
 }
 
 #shapeSelect {
@@ -96,16 +97,6 @@ main {
 
 #createButton:hover {
     background-color: #006fe0;
-}
-
-.shape {
-    width: 85px;
-    height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin: 5px;
 }
 
 p {
